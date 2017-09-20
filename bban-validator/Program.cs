@@ -7,9 +7,17 @@ namespace bban_validator
     {
         static void Main(string[] args)
         {
-            BBAN bbanNumber = new BBAN();
+            AccountNumber bbanNumber = new AccountNumber();
             bbanNumber.SetBBANNumber();
-            bbanNumber.CheckBBANValidity();
+
+            while (!bbanNumber.CheckBBANValidity())
+            {
+                bbanNumber.SetBBANNumber();
+            }
+
+            bbanNumber.ConvertBBANToIBAN("FI");
+            bbanNumber.ShowBICCode();
+            bbanNumber.ShowAccountNumberData();
         }
     }
 }
