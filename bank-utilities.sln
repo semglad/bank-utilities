@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank-barcode", "bank-barcod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "international-referencenumber2", "international-referencenumber2\international-referencenumber2.csproj", "{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{0316482F-38BB-4928-A863-A2E5EC1E7B00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0316482F-38BB-4928-A863-A2E5EC1E7B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0316482F-38BB-4928-A863-A2E5EC1E7B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0316482F-38BB-4928-A863-A2E5EC1E7B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0316482F-38BB-4928-A863-A2E5EC1E7B00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
