@@ -5,7 +5,19 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bank-utilities", "bank-utilities\bank-utilities.csproj", "{8CF8149D-CBE2-4B7D-AB75-2EE2103816B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bban-validator", "bban-validator\bban-validator.csproj", "{57F9436C-FAEF-4397-98B6-29AA1C1CD75E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bban-validator", "bban-validator\bban-validator.csproj", "{57F9436C-FAEF-4397-98B6-29AA1C1CD75E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "finnish-referencenumber1", "paymentreference-validator\finnish-referencenumber1.csproj", "{DE7D7C43-4D69-47F9-9A21-6A62BEB5837B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iban-calculator", "iban-calculator\iban-calculator.csproj", "{986CEF45-341F-40BE-9058-6F1A3C3EABC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "finnish-referencenumber2and3", "finnish-referencenumber2\finnish-referencenumber2and3.csproj", "{E5284E51-A003-4098-AAFF-FBE4386413B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "international-referencenumber1", "international-referencenumber\international-referencenumber1.csproj", "{685BD02F-1443-44C2-8BD7-54C6AD8131A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank-barcode", "bank-barcode\bank-barcode.csproj", "{D31394B2-C454-455E-9913-5CC938B5D617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "international-referencenumber2", "international-referencenumber2\international-referencenumber2.csproj", "{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +33,30 @@ Global
 		{57F9436C-FAEF-4397-98B6-29AA1C1CD75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57F9436C-FAEF-4397-98B6-29AA1C1CD75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57F9436C-FAEF-4397-98B6-29AA1C1CD75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7D7C43-4D69-47F9-9A21-6A62BEB5837B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7D7C43-4D69-47F9-9A21-6A62BEB5837B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7D7C43-4D69-47F9-9A21-6A62BEB5837B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7D7C43-4D69-47F9-9A21-6A62BEB5837B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986CEF45-341F-40BE-9058-6F1A3C3EABC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986CEF45-341F-40BE-9058-6F1A3C3EABC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986CEF45-341F-40BE-9058-6F1A3C3EABC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986CEF45-341F-40BE-9058-6F1A3C3EABC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5284E51-A003-4098-AAFF-FBE4386413B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5284E51-A003-4098-AAFF-FBE4386413B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5284E51-A003-4098-AAFF-FBE4386413B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5284E51-A003-4098-AAFF-FBE4386413B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685BD02F-1443-44C2-8BD7-54C6AD8131A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685BD02F-1443-44C2-8BD7-54C6AD8131A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685BD02F-1443-44C2-8BD7-54C6AD8131A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685BD02F-1443-44C2-8BD7-54C6AD8131A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31394B2-C454-455E-9913-5CC938B5D617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31394B2-C454-455E-9913-5CC938B5D617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31394B2-C454-455E-9913-5CC938B5D617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31394B2-C454-455E-9913-5CC938B5D617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6987B830-9E7B-41C4-9C18-E6C09ECB1FE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
