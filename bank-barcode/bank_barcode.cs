@@ -48,23 +48,12 @@ namespace bank_barcode
             // Prompt for a reference number
             Console.WriteLine("\nKirjoita laskuttajan viite:");
             userInput = Console.ReadLine().Replace(" ", "");
-            if (isInternationalReferenceNumber)
+
+            while (!NumberUtility.CheckNumberLength(userInput.Remove(0, 2)) || !PaymentReference.ValidateReferenceNumber(userInput, isInternationalReferenceNumber))
             {
-                while (!NumberUtility.CheckNumberLength(userInput.Remove(0, 2)) || !PaymentReference.ValidateReferenceNumber(userInput, true))
-                {
-                    Console.WriteLine("Viite virheellinen. Tarkista viite.");
-                    Console.WriteLine("Kirjoita laskuttajan viite:");
-                    userInput = Console.ReadLine().Replace(" ", "");
-                }
-            }
-            else
-            {
-                while (!NumberUtility.CheckNumberLength(userInput) || !PaymentReference.ValidateReferenceNumber(userInput, false))
-                {
-                    Console.WriteLine("Viite virheellinen. Tarkista viite.");
-                    Console.WriteLine("Kirjoita laskuttajan viite:");
-                    userInput = Console.ReadLine().Replace(" ", "");
-                }
+                Console.WriteLine("Viite virheellinen. Tarkista viite.");
+                Console.WriteLine("Kirjoita laskuttajan viite:");
+                userInput = Console.ReadLine().Replace(" ", "");
             }
 
             string referenceNumber = userInput.TrimStart(Convert.ToChar("0"));
