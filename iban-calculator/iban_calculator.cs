@@ -33,7 +33,7 @@ namespace iban_calculator
                 characterPositionToPadFrom = 6;
 
             // Pad the number with 0's until the length of the number is 14
-            string bbanNumber = NumberUtility.AddZeroPadding(userInput, characterPositionToPadFrom, 14);
+            string bbanNumber = NumberUtility.AddPadding(userInput, characterPositionToPadFrom, 14);
 
             // Check the input for length (min length 7) and validity (no alphabetical characters). If not valid, prompt for a valid number.
             while (!NumberUtility.CheckNumberLength(bbanNumber, 7, 14) || !AccountNumber.ValidateBBANNumber(bbanNumber))
@@ -62,7 +62,7 @@ namespace iban_calculator
                     characterPositionToPadFrom = 6;
 
                 // Pad the number with 0's until the length of the number is 14
-                bbanNumber = NumberUtility.AddZeroPadding(userInput, characterPositionToPadFrom, 14);
+                bbanNumber = NumberUtility.AddPadding(userInput, characterPositionToPadFrom, 14);
             }
 
             Console.WriteLine("Tilinumerosi IBAN-paperimuodossa on {0}", NumberUtility.GroupDigits(AccountNumber.ConvertBBANToIBAN(bbanNumber), 4, false));

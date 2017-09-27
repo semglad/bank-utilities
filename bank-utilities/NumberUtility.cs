@@ -7,7 +7,7 @@ namespace Ekoodi.Utilities.Finance
     {
         // This method takes in four parameters: the string to manipulate, starting position, desired string length and the character (set) which to insert. It keeps inserting the character (set)
         // to the string at the starting position until the string has the desired length. It is recommended to use a single character string as a character (set)
-        public static string AddZeroPadding(string stringToPad, int startingPosition, int desiredLength, string characterSet = "0")
+        public static string AddPadding(string stringToPad, int startingPosition, int desiredLength, string characterSet = "0")
         {
             while (stringToPad.Length < desiredLength)
             {

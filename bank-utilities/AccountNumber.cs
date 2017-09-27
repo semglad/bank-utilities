@@ -47,21 +47,11 @@ namespace Ekoodi.Utilities.Finance
 
         public static string CalculateIBANCheckDigit (string bbanNumber)
         {
+            string bbanNumberWithCountryCodeDigits = bbanNumber + NumberUtility.CalculateCountryCodeDigits("FI") + "00";
 
-            string bbanNumberWithCountryCodeDigits = bbanNumber + NumberUtility.CalculateCountryCodeDigits("FI");
-
-            string checkDigit = null;
-
-            for (int i = 0; i < 100; i++)
-            {
-                if (BigInteger.Parse(bbanNumberWithCountryCodeDigits + i.ToString()) % 97 == 1)
-                {
-                    checkDigit = i.ToString();
-                }
-            }
-
+            string checkDigit = NumberUtility.AddPadding((98 - BigInteger.Parse(bbanNumberWithCountryCodeDigits) % 97).ToString(), 0, 2);
+            
             return checkDigit;
-
         }
 
         public static string ConvertBBANToIBAN(string bbanNumber, string countryCode = "FI")

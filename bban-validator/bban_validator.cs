@@ -35,7 +35,7 @@ namespace bban_validator
                 characterPositionToPadFrom = 6;
 
             // Pad the number with 0's until the length of the number is 14
-            string bbanNumber = NumberUtility.AddZeroPadding(userInput, characterPositionToPadFrom, 14);
+            string bbanNumber = NumberUtility.AddPadding(userInput, characterPositionToPadFrom, 14);
 
             if (AccountNumber.ValidateBBANNumber(bbanNumber))
             {
