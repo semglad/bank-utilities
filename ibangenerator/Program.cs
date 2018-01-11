@@ -16,6 +16,8 @@ namespace bban_validator
             // without it. Therefore all hyphens are removed.
             string userInput = Console.ReadLine().Replace("-", "");
 
+            userInput = userInput + "0";
+
             // Check the input for length (min length 7) and validity (no alphabetical characters). If not valid, prompt for a valid number.
             while (!NumberUtility.CheckNumberLength(userInput.Replace("-", ""), 7, 14))
             {
@@ -38,16 +40,7 @@ namespace bban_validator
             string bbanNumber = NumberUtility.AddPadding(userInput, characterPositionToPadFrom, 14);
 
             Console.WriteLine("Tilinumerosi tarkiste: {0}", AccountNumber.CalculateBBANCheckDigit(bbanNumber));
-
-            if (AccountNumber.ValidateBBANNumber(bbanNumber))
-            {
-                Console.WriteLine("Tilinumerosi konekielisessa BBAN-muodossa: {0}", bbanNumber);
-                Console.WriteLine("Tilinumerosi konekielisessa IBAN-muodossa: {0}", AccountNumber.ConvertBBANToIBAN(bbanNumber));
-            } else
-            {
-                Console.WriteLine("Tilinumeron tarkiste vaarin. Tarkista tilinumero!");
-            }
-
+            Console.WriteLine("Tilinumerosi IBAN: {0}", AccountNumber.ConvertBBANToIBAN(bbanNumber));
             Console.ReadKey();
         }
     }
